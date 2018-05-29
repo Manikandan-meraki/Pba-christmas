@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PBA</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <style>
+  
+body{margin:0 auto;
+width:800px;
+margin:15px auto;
+background:#002a56;
+font-family: 'Montserrat', sans-serif;}
+p{       font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    /* text-shadow: 3px 4px 5px rgb(241, 167, 0); */
+    color: #ffffff;
+    line-height: 1.5;
+	
+	}
+	p span {
+    font-weight: 700;
+    background: #fff;
+    padding: 0px 10px;
+    color: #002a56;
+}
+a{    color: #002a56;text-decoration:none;}
+a:hover{    color: #5d5d5d;}
+.cnt{    background: #002a56;}
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('img/s1.png'), url('img/s2.png'), url('img/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+/*body{background:url(img/pbabgg.png);
+background-size:cover;
+  }*/
+.pba-bg{background:url(img/pba-bg-800.jpg);
+ width:800px;
+ height:500px;
+margin:0 auto;
+position:relative;
+  }
+  .off-bg{background:url(img/off-bg-800.jpg);
+  }
+.box{
+ 	
+width: 190px;
+    height: 150px;
+    background: url(img/f-190.png);
+        bottom: 115px;
+    margin: 0px -15px;
+    position: absolute;
+    float: right;
+    right: 250px;
+    -moz-animation: 1s ease 0s normal none infinite swing;
+    -moz-transform-origin: left top;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    -webkit-transform-origin: top;
+    background-repeat: no-repeat;	
+	
+	
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-20deg)}
+    50%{-moz-transform:rotate(20deg)}
+    100%{-moz-transform:rotate(-20deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-20deg)}
+    50%{-webkit-transform:rotate(20deg)}
+    100%{-webkit-transform:rotate(-20deg)}
+}
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div class="pba-bg">
+<div id="snow">
+ <div class="box"></div>
+</div></div>
+<div class="cnt">
+<p>If you need something shored up, <br>and <span>Santa is busy,</span> <br><span><a href="tel:(415) 259-0191"> call PB&A! </a></span></p>
+
+</div>
+<div class="pba-bg off-bg">
+<div id="snow">
+
+</div></div>
+
+
+ 
+ 
+</body>
+</html>
